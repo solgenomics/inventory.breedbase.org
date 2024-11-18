@@ -1,0 +1,1300 @@
+format-version: 1.2
+date: 10:03:2024 17:10
+saved-by: Lukas_Mueller
+default-namespace: INV
+ontology: CO_365
+
+
+[Term]
+id: INV:0000000
+name: ROOT
+namespace: INV
+
+[Term] 
+id: INV:0000001
+name: Abiotic Stress
+def: "Abiotic Stress" []
+namespace: INV
+is_a: INV:0000000 ! ROOT
+
+[Term] 
+id: INV:0000002
+name: Agronomic
+def: "Agronomic" []
+namespace: INV
+is_a: INV:0000000 ! ROOT
+
+[Term] 
+id: INV:0000003
+name: Biotic Stress
+def: "Biotic Stress" []
+namespace: INV
+is_a: INV:0000000 ! ROOT
+
+[Term] 
+id: INV:0000004
+name: Morphological
+def: "Morphological" []
+namespace: INV
+is_a: INV:0000000 ! ROOT
+
+[Term] 
+id: INV:0000005
+name: Physiological
+def: "Physiological" []
+namespace: INV
+is_a: INV:0000000 ! ROOT
+
+[Term] 
+id: INV:0000006
+name: Quality
+def: "Quality" []
+namespace: INV
+is_a: INV:0000000 ! ROOT
+
+[Term] 
+id: INV:0000007
+name: Acid
+def: "" []
+namespace: INV
+is_a: INV:0000006 ! Quality
+
+[Term] 
+id: INV:0000008
+name: Biological Index Inoculation Date
+def: "" []
+namespace: INV
+is_a: INV:0000003 ! Biotic Stress
+
+[Term] 
+id: INV:0000009
+name: Biological Index Inoculation Source Tree
+def: "" []
+namespace: INV
+is_a: INV:0000003 ! Biotic Stress
+
+[Term] 
+id: INV:0000010
+name: Biological Index Result
+def: "" []
+namespace: INV
+is_a: INV:0000003 ! Biotic Stress
+
+[Term] 
+id: INV:0000011
+name: Brix Acid Ratio
+def: "" []
+namespace: INV
+is_a: INV:0000006 ! Quality
+
+[Term] 
+id: INV:0000012
+name: Canopy Color
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000013
+name: Canopy Density
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000014
+name: Canopy Diameter
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000015
+name: Canopy Volume
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000016
+name: Chopped Fruit Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000017
+name: Days to Recover
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000018
+name: Days to Wilt
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000019
+name: Dry Fruit Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000020
+name: Dry Leaf Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000021
+name: Dry Seed Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000022
+name: Dry Soil Weight
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000023
+name: Endocarp Color
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000024
+name: Exocarp Color
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000025
+name: Exocarp Texture
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000026
+name: Exocarp Thickness
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000027
+name: Final Fruit Temperature
+def: "" []
+namespace: INV
+is_a: INV:0000005 ! Physiological
+
+[Term] 
+id: INV:0000028
+name: Fresh Fruit Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000029
+name: Fresh Leaf Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000030
+name: Fresh Seed Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000031
+name: Fruit Area
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000032
+name: Fruit Collection Date
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000033
+name: Fruit Diameter
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000034
+name: Fruit Longest Path
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000035
+name: Fruit Perimeter
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000036
+name: Fruit Volume
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000037
+name: Fruit Water Activity
+def: "" []
+namespace: INV
+is_a: INV:0000005 ! Physiological
+
+[Term] 
+id: INV:0000038
+name: Fruit Water Loss
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000039
+name: Fruit Water Potential
+def: "" []
+namespace: INV
+is_a: INV:0000005 ! Physiological
+
+[Term] 
+id: INV:0000040
+name: Graft Survival
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
+id: INV:0000041
+name: Graft Survival Date
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
+id: INV:0000042
+name: Juice Percent
+def: "" []
+namespace: INV
+is_a: INV:0000006 ! Quality
+
+[Term] 
+id: INV:0000043
+name: Juice Weight
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
+id: INV:0000044
+name: Leaf Collection Date
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000045
+name: Leaf Conductance
+def: "" []
+namespace: INV
+is_a: INV:0000005 ! Physiological
+
+[Term] 
+id: INV:0000046
+name: Leaf Relative Humidity
+def: "" []
+namespace: INV
+is_a: INV:0000005 ! Physiological
+
+[Term] 
+id: INV:0000047
+name: Leaf Relative Water Content
+def: "" []
+namespace: INV
+is_a: INV:0000005 ! Physiological
+
+[Term] 
+id: INV:0000048
+name: Leaf Water Loss
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000049
+name: Rootstock Trunk Diameter
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000050
+name: Sampled Fruit Number
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
+id: INV:0000051
+name: Scion Trunk Diameter
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000052
+name: Seed Count
+def: "" []
+namespace: INV
+is_a: INV:0000006 ! Quality
+
+[Term] 
+id: INV:0000053
+name: Seed Water Loss
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000054
+name: Soil Moisture
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000055
+name: Total Soluble Solids
+def: "" []
+namespace: INV
+is_a: INV:0000006 ! Quality
+
+[Term] 
+id: INV:0000056
+name: Tree Yield
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
+id: INV:0000057
+name: Turgid Leaf Weight
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000058
+name: Wet Soil Weight
+def: "" []
+namespace: INV
+is_a: INV:0000001 ! Abiotic Stress
+
+[Term] 
+id: INV:0000059
+name: Acid - Acidity Measurement - no unit
+def: "Juice acidity from fruit sample using titration." []
+namespace: INV
+relationship: variable_of INV:0000007 ! Acid
+
+[Term] 
+id: INV:0000060
+name: Biological Index Inoculation Date - Biological Index Inoculation Date - YYYY-MM-DD
+def: "Date tree was inoculated with pathogen for bioindexing" []
+namespace: INV
+relationship: variable_of INV:0000008 ! Biological Index Inoculation Date
+
+[Term] 
+id: INV:0000061
+name: Biological Index Inoculation Source Tree - Biological Index Inoculation Source Tree - Free Text
+def: "Unique identifier of positive source tree used for inoculation." []
+namespace: INV
+relationship: variable_of INV:0000009 ! Biological Index Inoculation Source Tree
+
+[Term] 
+id: INV:0000062
+name: Biological Index Result - Biological Index Result - 0-11 Bioindex Result Scale
+def: "Visual estimation of bioindexing result" []
+namespace: INV
+relationship: variable_of INV:0000010 ! Biological Index Result
+
+[Term] 
+id: INV:0000063
+name: Brix Acid Ratio - Calculation of Brix Acid Ratio - no unit
+def: "Brix/TSS measurement divided by Titratable Acidity Measurement" []
+namespace: INV
+relationship: variable_of INV:0000011 ! Brix Acid Ratio
+
+[Term] 
+id: INV:0000064
+name: Canopy Color - Canopy Color Rating - 1-5 Canopy Color Rating
+def: "Rating of overall color of canopy from 1 to 5, where 1=very yellow, worst and 5=very green, best." []
+namespace: INV
+relationship: variable_of INV:0000012 ! Canopy Color
+
+[Term] 
+id: INV:0000065
+name: Canopy Density - Canopy Density with Digital Canopy Analyzer Measurement - LAI
+def: "Tree Canopy Density Measurement using Digital Canopy Analyzer" []
+namespace: INV
+relationship: variable_of INV:0000013 ! Canopy Density
+
+[Term] 
+id: INV:0000066
+name: Canopy Diameter - Canopy Width/Diameter from East to West Measurement - centimeters
+def: "Canopy width measurement from East to West in cm." []
+namespace: INV
+relationship: variable_of INV:0000014 ! Canopy Diameter
+
+[Term] 
+id: INV:0000067
+name: Canopy Diameter - Canopy Width/Diameter from North to South Measurement - centimeters
+def: "Canopy width measurement from North to South in cm." []
+namespace: INV
+relationship: variable_of INV:0000014 ! Canopy Diameter
+
+[Term] 
+id: INV:0000068
+name: Canopy Volume - Canopy Volume Calculation - m^3
+def: "Calculation of canopy volume based on Canopy Diameter from N-S, Canopy Diameter from E-W, and Height of Tree. (NS_Dia*EW_Dia*TreeHt)/4" []
+namespace: INV
+relationship: variable_of INV:0000015 ! Canopy Volume
+
+[Term] 
+id: INV:0000069
+name: Chopped Fruit Weight - Chopped Fruit Weight Measurement - grams
+def: "Fruit sample weight after chopping for evaluation  in grams." []
+namespace: INV
+relationship: variable_of INV:0000016 ! Chopped Fruit Weight
+
+[Term] 
+id: INV:0000070
+name: Days to Recover - Days to Recovery - count
+def: "A count of the number of days after water reintroduction until tree recovers." []
+namespace: INV
+relationship: variable_of INV:0000017 ! Days to Recover
+
+[Term] 
+id: INV:0000071
+name: Days to Wilt - Days to Wilt - count
+def: "A count of the number of days after drought conditions are applied until tree wilts." []
+namespace: INV
+relationship: variable_of INV:0000018 ! Days to Wilt
+
+[Term] 
+id: INV:0000072
+name: Dry Fruit Weight - Dry Fruit Weight Measurement - grams
+def: "Fruit sample weight after drying in grams." []
+namespace: INV
+relationship: variable_of INV:0000019 ! Dry Fruit Weight
+
+[Term] 
+id: INV:0000073
+name: Dry Leaf Weight - Dry Leaf Tissue Weight Measurement - grams
+def: "Leaf sample weight in grams after drying in oven at 85C overnight" []
+namespace: INV
+relationship: variable_of INV:0000020 ! Dry Leaf Weight
+
+[Term] 
+id: INV:0000074
+name: Dry Seed Weight - Dry Seed Weight Measurement - grams
+def: "Seed sample weight in grams after drying." []
+namespace: INV
+relationship: variable_of INV:0000021 ! Dry Seed Weight
+
+[Term] 
+id: INV:0000075
+name: Dry Soil Weight - Dry Soil Weight Measurement - grams
+def: "Direct measurement of the weight of a soil sample after drying." []
+namespace: INV
+relationship: variable_of INV:0000022 ! Dry Soil Weight
+
+[Term] 
+id: INV:0000076
+name: Endocarp Color - Class 1 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 1 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000077
+name: Endocarp Color - Class 1 Color Pixel Count - count
+def: "Number of pixels assigned to class 1 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000078
+name: Endocarp Color - Class 10 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 10 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000079
+name: Endocarp Color - Class 10 Color Pixel Count - count
+def: "Number of pixels assigned to class 10 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000080
+name: Endocarp Color - Class 2 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 2 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000081
+name: Endocarp Color - Class 2 Color Pixel Count - count
+def: "Number of pixels assigned to class 2 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000082
+name: Endocarp Color - Class 3 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 3 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000083
+name: Endocarp Color - Class 3 Color Pixel Count - count
+def: "Number of pixels assigned to class 3 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000084
+name: Endocarp Color - Class 6 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 6 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000085
+name: Endocarp Color - Class 6 Color Pixel Count - count
+def: "Number of pixels assigned to class 6 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000086
+name: Endocarp Color - Class 8 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 8 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000087
+name: Endocarp Color - Class 8 Color Pixel Count - count
+def: "Number of pixels assigned to class 8 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000088
+name: Endocarp Color - Endocarp Color Rating - 0-7 Endocarp Fruit Color Scale
+def: "Estimation of endocarp color using a rating scale" []
+namespace: INV
+relationship: variable_of INV:0000023 ! Endocarp Color
+
+[Term] 
+id: INV:0000089
+name: Exocarp Color - Class 1 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 1 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000090
+name: Exocarp Color - Class 1 Color Pixel Count - count
+def: "Number of pixels assigned to class 1 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000091
+name: Exocarp Color - Class 10 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 10 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000092
+name: Exocarp Color - Class 10 Color Pixel Count - count
+def: "Number of pixels assigned to class 10 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000093
+name: Exocarp Color - Class 2 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 2 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000094
+name: Exocarp Color - Class 2 Color Pixel Count - count
+def: "Number of pixels assigned to class 2 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000095
+name: Exocarp Color - Class 3 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 3 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000096
+name: Exocarp Color - Class 3 Color Pixel Count - count
+def: "Number of pixels assigned to class 3 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000097
+name: Exocarp Color - Class 6 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 6 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000098
+name: Exocarp Color - Class 6 Color Pixel Count - count
+def: "Number of pixels assigned to class 6 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000099
+name: Exocarp Color - Class 8 Color Percentage - percentage
+def: "Percentage of pixels assigned to class 8 color bin (RGB 173 90 32) using Naïve Bayes. (# Assigned Pixels)/(Total # Pixels)" []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000100
+name: Exocarp Color - Class 8 Color Pixel Count - count
+def: "Number of pixels assigned to class 8 color bin (RGB 173 90 32) using Naïve Bayes." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000101
+name: Exocarp Color - Exocarp Color Rating - 3-13 Exocarp Fruit Color Scale
+def: "Rating of exocarp color based on color reference chart from 3 to 13, where 3 = Dark Green, 5 = Color Break, and 13 = Orange Red." []
+namespace: INV
+relationship: variable_of INV:0000024 ! Exocarp Color
+
+[Term] 
+id: INV:0000102
+name: Exocarp Texture - Exocarp Texture Rating - 1-8 Exocarp Texture Scale
+def: "Exocarp texture estimation of fruit sample using a rating scale from 1 to 8, where 1 = Smooth and 8 = Rough." []
+namespace: INV
+relationship: variable_of INV:0000025 ! Exocarp Texture
+
+[Term] 
+id: INV:0000103
+name: Exocarp Thickness - Exocarp Thickness Measurement - millimeters
+def: "Exocarp (rind) thickness in mm of a single fruit." []
+namespace: INV
+relationship: variable_of INV:0000026 ! Exocarp Thickness
+
+[Term] 
+id: INV:0000104
+name: Final Fruit Temperature - Aqualab 4TE Final Fruit Temperature Measurement - Degrees Celsius
+def: "Final fruit temperature using the Aqualab 4TE meter." []
+namespace: INV
+relationship: variable_of INV:0000027 ! Final Fruit Temperature
+
+[Term] 
+id: INV:0000105
+name: Final Fruit Temperature - WP4C Final Fruit Temperature Measurement - Degrees Celsius
+def: "Final fruit temperature using the WP4C Dewpoint PotentiaMeter." []
+namespace: INV
+relationship: variable_of INV:0000027 ! Final Fruit Temperature
+
+[Term] 
+id: INV:0000106
+name: Fresh Fruit Weight - Fresh Fruit Weight Measurement - grams
+def: "Weight of all fruit in sample in grams." []
+namespace: INV
+relationship: variable_of INV:0000028 ! Fresh Fruit Weight
+
+[Term] 
+id: INV:0000107
+name: Fresh Fruit Weight - Fresh Fruit Weight Measurement - kilograms
+def: "Weight of all fruit in sample in kilograms." []
+namespace: INV
+relationship: variable_of INV:0000028 ! Fresh Fruit Weight
+
+[Term] 
+id: INV:0000108
+name: Fresh Leaf Weight - Fresh Leaf Tissue Weight Measurement - grams
+def: "Fresh leaf sample weight in grams." []
+namespace: INV
+relationship: variable_of INV:0000029 ! Fresh Leaf Weight
+
+[Term] 
+id: INV:0000109
+name: Fresh Seed Weight - Fresh Seed Weight Measurement - grams
+def: "Fresh seed sample weight in grams." []
+namespace: INV
+relationship: variable_of INV:0000030 ! Fresh Seed Weight
+
+[Term] 
+id: INV:0000110
+name: Fruit Area - Area of Convex Hull of Fruit from Cut Side Down Image Measurement - mm^2
+def: "Fruit is cut in half and imaged cut side down. A convex hull is fitted on fruit and area is measured." []
+namespace: INV
+relationship: variable_of INV:0000031 ! Fruit Area
+
+[Term] 
+id: INV:0000111
+name: Fruit Area - Area of Convex Hull of Fruit from Cut Side Up Image Measurement - mm^2
+def: "Fruit is cut in half and imaged cut side up. A convex hull is fitted on fruit and area is measured." []
+namespace: INV
+relationship: variable_of INV:0000031 ! Fruit Area
+
+[Term] 
+id: INV:0000112
+name: Fruit Area - Area of Fruit from Cut Side Down Image Measurement - mm^2
+def: "Fruit is cut in half and imaged cut side down and area of entire surface is measured." []
+namespace: INV
+relationship: variable_of INV:0000031 ! Fruit Area
+
+[Term] 
+id: INV:0000113
+name: Fruit Area - Area of Fruit from Cut Side Up Image Measurement - mm^2
+def: "Fruit is cut in half and imaged cut side up and area of entire surface is measured." []
+namespace: INV
+relationship: variable_of INV:0000031 ! Fruit Area
+
+[Term] 
+id: INV:0000114
+name: Fruit Collection Date - Fruit Collection Date - YYYY-MM-DD
+def: "Date fruit sample was collected." []
+namespace: INV
+relationship: variable_of INV:0000032 ! Fruit Collection Date
+
+[Term] 
+id: INV:0000115
+name: Fruit Diameter - Ellipse Major Axis from Cut Side Down Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side down. An ellipse is fitted to fruit and the length of the major axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000116
+name: Fruit Diameter - Ellipse Major Axis from Cut Side Up Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side up. An ellipse is fitted to fruit and the length of the major axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000117
+name: Fruit Diameter - Ellipse Major Axis from Side 1 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented parallel to background surface. An ellipse is fitted to fruit and the length of the major axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000118
+name: Fruit Diameter - Ellipse Major Axis from Side 1 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented perpendicular to background surface. An ellipse is fitted to fruit and the length of the major axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000119
+name: Fruit Diameter - Ellipse Major Axis from Side 2 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented parallel to background surface. An ellipse is fitted to fruit and the length of the major axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000120
+name: Fruit Diameter - Ellipse Major Axis from Side 2 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented perpendicular to background surface. An ellipse is fitted to fruit and the length of the major axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000121
+name: Fruit Diameter - Ellipse Minor Axis from Cut Side Down Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side down. An ellipse is fitted to fruit and the length of the minor axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000122
+name: Fruit Diameter - Ellipse Minor Axis from Cut Side Up Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side up. An ellipse is fitted to fruit and the length of the minor axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000123
+name: Fruit Diameter - Ellipse Minor Axis from Side 1 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with oriented parallel to background surface. An ellipse is fitted to fruit and the length of the minor axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000124
+name: Fruit Diameter - Ellipse Minor Axis from Side 1 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented perpendicular to background surface. An ellipse is fitted to fruit and the length of the minor axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000125
+name: Fruit Diameter - Ellipse Minor Axis from Side 2 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented parallel to background surface. An ellipse is fitted to fruit and the length of the minor axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000126
+name: Fruit Diameter - Ellipse Minor Axis from Side 2 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented perpendicular to background surface. An ellipse is fitted to fruit and the length of the minor axis of ellipse is measured." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000127
+name: Fruit Diameter - Fruit Equatorial Diameter Measurement - millimeters
+def: "Equatorial diameter of fruit sample in mm." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000128
+name: Fruit Diameter - Height from Cut Side Down Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side down. The verticle axis (height) is measured from furthest point on top and furthest point on bottom of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000129
+name: Fruit Diameter - Height from Cut Side Up Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side up. The verticle axis (height) is measured from furthest point on top and furthest point on bottom of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000130
+name: Fruit Diameter - Height from Side 1 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented parallel to background surface. The verticle axis (height) is measured from furthest point on top and furthest point on bottom of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000131
+name: Fruit Diameter - Height from Side 1 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented perpendicular to background surface. The verticle axis (height) is measured from furthest point on top and furthest point on bottom of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000132
+name: Fruit Diameter - Height from Side 2 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented parallel to background surface. The verticle axis (height) is measured from furthest point on top and furthest point on bottom of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000133
+name: Fruit Diameter - Height from Side 2 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented perpendicular to background surface. The verticle axis (height) is measured from furthest point on top and furthest point on bottom of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000134
+name: Fruit Diameter - Manual Fruit Equatorial Diameter Measurement - centimeters
+def: "Equatorial diameter of fruit sample in cm." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000135
+name: Fruit Diameter - Manual Fruit Polar Diameter Measurement - centimeters
+def: "Polar diameter of single fruit in cm." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000136
+name: Fruit Diameter - Manual Fruit Polar Diameter Measurement - millimeters
+def: "Polar diameter of single fruit in mm." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000137
+name: Fruit Diameter - Manual Measurement of Total Width of All Fruit Sampled - centimeters
+def: "Measurement of the total length of all fruit (polar diameter) in sample when lined up top-to-bottom" []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000138
+name: Fruit Diameter - Width from Cut Side Down Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side down. The horizontal axis (width) is measured from furthest point on left and furthest point on right of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000139
+name: Fruit Diameter - Width from Cut Side Up Fruit Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side up. The horizontal axis (width) is measured from furthest point on left and furthest point on right of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000140
+name: Fruit Diameter - Width from Side 1 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented parallel to background surface. The horizontal axis (width) is measured from furthest point on left and furthest point on right of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000141
+name: Fruit Diameter - Width from Side 1 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented perpendicular to background surface. The horizontal axis (width) is measured from furthest point on left and furthest point on right of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000142
+name: Fruit Diameter - Width from Side 2 of Whole Fruit Imaged with Poles Parallel Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented parallel to background surface. The horizontal axis (width) is measured from furthest point on left and furthest point on right of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000143
+name: Fruit Diameter - Width from Side 2 of Whole Fruit Imaged with Poles Perpendicular Measurement - millimeters
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented perpendicular to background surface. The horizontal axis (width) is measured from furthest point on left and furthest point on right of fruit." []
+namespace: INV
+relationship: variable_of INV:0000033 ! Fruit Diameter
+
+[Term] 
+id: INV:0000144
+name: Fruit Longest Path - The longest path through fruit imaged Cut Side Down Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side down and the length of the line through center of mass and furthest point on the convex hull around fruit is measured." []
+namespace: INV
+relationship: variable_of INV:0000034 ! Fruit Longest Path
+
+[Term] 
+id: INV:0000145
+name: Fruit Longest Path - The longest path through fruit imaged Cut Side Up Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side up and the length of the line through center of mass and furthest point on the convex hull around fruit is measured." []
+namespace: INV
+relationship: variable_of INV:0000034 ! Fruit Longest Path
+
+[Term] 
+id: INV:0000146
+name: Fruit Perimeter - Perimeter of fruit from Cut Side Down Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side down. The perimeter around outer edge of fruit is measured." []
+namespace: INV
+relationship: variable_of INV:0000035 ! Fruit Perimeter
+
+[Term] 
+id: INV:0000147
+name: Fruit Perimeter - Perimeter of fruit from Cut Side Up Image Measurement - millimeters
+def: "Fruit is cut in half and imaged cut side up. The perimeter around outer edge of fruit is measured." []
+namespace: INV
+relationship: variable_of INV:0000035 ! Fruit Perimeter
+
+[Term] 
+id: INV:0000148
+name: Fruit Volume - Fruit volume calculation of fruit using major axis of ellipse from Cut Side Down image - mm^3
+def: "Fruit is cut in half and imaged cut side down. Volume is calculated based on major axis of the fitted ellipse (V=(Ï€d^3)/6)" []
+namespace: INV
+relationship: variable_of INV:0000036 ! Fruit Volume
+
+[Term] 
+id: INV:0000149
+name: Fruit Volume - Fruit volume calculation of fruit using major axis of ellipse from Cut Side Up image - mm^3
+def: "Fruit is cut in half and imaged cut side down. Volume is calculated based on minor axis of the fitted ellipse (V=(Ï€d^3)/6)" []
+namespace: INV
+relationship: variable_of INV:0000036 ! Fruit Volume
+
+[Term] 
+id: INV:0000150
+name: Fruit Volume - Volume of fruit calculation using major axis of ellipse from Cut Side Up Image - mm^3
+def: "Fruit is cut in half and imaged cut side up. Volume is calculated based on major axis of the fitted ellipse (V=(Ï€d^3)/6)" []
+namespace: INV
+relationship: variable_of INV:0000036 ! Fruit Volume
+
+[Term] 
+id: INV:0000151
+name: Fruit Volume - Volume of fruit calculation using minor axis of ellipse from Cut Side Up Image - mm^3
+def: "Fruit is cut in half and imaged cut side up. Volume is calculated based on minor axis of the fitted ellipse (V=(Ï€d^3)/6)" []
+namespace: INV
+relationship: variable_of INV:0000036 ! Fruit Volume
+
+[Term] 
+id: INV:0000152
+name: Fruit Water Activity - Aqualab 4TE Fruit Water Activity Measurement - Water activity
+def: "Fruit water activity using the Aqualab 4TE meter." []
+namespace: INV
+relationship: variable_of INV:0000037 ! Fruit Water Activity
+
+[Term] 
+id: INV:0000153
+name: Fruit Water Activity - WP4C Fruit Water Activity Measurement - Water activity
+def: "Fruit water activity using the WP4C Dewpoint PotentiaMeter." []
+namespace: INV
+relationship: variable_of INV:0000037 ! Fruit Water Activity
+
+[Term] 
+id: INV:0000154
+name: Fruit Water Loss - Fruit Water Loss Calculation - percentage
+def: "Fruit water loss calculation. WatLoss = (Fresh Weight - Dry Weight)/(Fresh Weight)" []
+namespace: INV
+relationship: variable_of INV:0000038 ! Fruit Water Loss
+
+[Term] 
+id: INV:0000155
+name: Fruit Water Potential - WP4C Fruit Water Potential Measurement - Megapascal
+def: "Fruit water potential using the WP4C Dewpoint PotentiaMeter." []
+namespace: INV
+relationship: variable_of INV:0000039 ! Fruit Water Potential
+
+[Term] 
+id: INV:0000156
+name: Graft Survival - Graft Survival Status - 0-1 Dead/Alive
+def: "Date tree graft was evaluated for survival." []
+namespace: INV
+relationship: variable_of INV:0000040 ! Graft Survival
+
+[Term] 
+id: INV:0000157
+name: Graft Survival Date - Graft Survival Date - YYYY-MM-DD
+def: "Survival status of tree graft." []
+namespace: INV
+relationship: variable_of INV:0000041 ! Graft Survival Date
+
+[Term] 
+id: INV:0000158
+name: Juice Percent - Calculation of Juice Percentage in Fruit - percentage
+def: "Total Juice Weight divided by Total Fruit Weight for a Fruit Sample" []
+namespace: INV
+relationship: variable_of INV:0000042 ! Juice Percent
+
+[Term] 
+id: INV:0000159
+name: Juice Weight - Juice Sample Weight Measurement - grams
+def: "Juice weight of a fruit sample in grams." []
+namespace: INV
+relationship: variable_of INV:0000043 ! Juice Weight
+
+[Term] 
+id: INV:0000160
+name: Juice Weight - Juice Sample Weight Measurement - kilograms
+def: "Juice weight of a fruit sample in kilograms." []
+namespace: INV
+relationship: variable_of INV:0000043 ! Juice Weight
+
+[Term] 
+id: INV:0000161
+name: Leaf Collection Date - Leaf Collection Date - YYYY-MM-DD
+def: "Date leaf sample was collected." []
+namespace: INV
+relationship: variable_of INV:0000044 ! Leaf Collection Date
+
+[Term] 
+id: INV:0000162
+name: Leaf Conductance - Leaf Conductance Measurement - mmol/(m²·s)
+def: "Leaf conductance of sample using a leaf porometer" []
+namespace: INV
+relationship: variable_of INV:0000045 ! Leaf Conductance
+
+[Term] 
+id: INV:0000163
+name: Leaf Relative Humidity - Leaf Relative Humidity Measurement - percentage
+def: "Leaf relative humidity of sample using a leaf porometer" []
+namespace: INV
+relationship: variable_of INV:0000046 ! Leaf Relative Humidity
+
+[Term] 
+id: INV:0000164
+name: Leaf Relative Water Content - Leaf Relative Water Content Calculation - percentage
+def: "Relative water content calculation of a leaf sample. RWC = (fresh weight - dry weight)/(turgid weight - dry weight)" []
+namespace: INV
+relationship: variable_of INV:0000047 ! Leaf Relative Water Content
+
+[Term] 
+id: INV:0000165
+name: Leaf Water Loss - Leaf Water Loss Calculation - percentage
+def: "Leaf water loss calculation. WatLoss = (Fresh Weight - Dry Weight)/(Fresh Weight)" []
+namespace: INV
+relationship: variable_of INV:0000048 ! Leaf Water Loss
+
+[Term] 
+id: INV:0000166
+name: Rootstock Trunk Diameter - Scion Diameter East to West Measurement - centimeters
+def: "Measurement of scion diameter just below bud union from East to West in cm." []
+namespace: INV
+relationship: variable_of INV:0000049 ! Rootstock Trunk Diameter
+
+[Term] 
+id: INV:0000167
+name: Rootstock Trunk Diameter - Scion Diameter East to West Measurement - inches
+def: "Measurement of diameter just below bud union from East to West in inches." []
+namespace: INV
+relationship: variable_of INV:0000049 ! Rootstock Trunk Diameter
+
+[Term] 
+id: INV:0000168
+name: Rootstock Trunk Diameter - Scion Diameter North to South Measurement - centimeters
+def: "Measurement of scion diameter just below bud union from North to South in cm." []
+namespace: INV
+relationship: variable_of INV:0000049 ! Rootstock Trunk Diameter
+
+[Term] 
+id: INV:0000169
+name: Rootstock Trunk Diameter - Scion Diameter North to South Measurement - inches
+def: "Measurement of scion diameter just below bud union from North to South in inches." []
+namespace: INV
+relationship: variable_of INV:0000049 ! Rootstock Trunk Diameter
+
+[Term] 
+id: INV:0000170
+name: Sampled Fruit Number - Sampled Fruit Count - count
+def: "The number of fruit in a sample used for analysis" []
+namespace: INV
+relationship: variable_of INV:0000050 ! Sampled Fruit Number
+
+[Term] 
+id: INV:0000171
+name: Scion Trunk Diameter - Scion Diameter East to West - centimeters
+def: "Measurement of scion diameter just above bud union from East to West in cm." []
+namespace: INV
+relationship: variable_of INV:0000051 ! Scion Trunk Diameter
+
+[Term] 
+id: INV:0000172
+name: Scion Trunk Diameter - Scion Diameter East to West Measurement - inches
+def: "Measurement of scion diameter just above bud union from East to West in inches." []
+namespace: INV
+relationship: variable_of INV:0000051 ! Scion Trunk Diameter
+
+[Term] 
+id: INV:0000173
+name: Scion Trunk Diameter - Scion Diameter North to South - centimeters
+def: "Measurement of scion diameter just above bud union from North to South in cm." []
+namespace: INV
+relationship: variable_of INV:0000051 ! Scion Trunk Diameter
+
+[Term] 
+id: INV:0000174
+name: Scion Trunk Diameter - Scion Diameter North to South Measurement - inches
+def: "Measurement of scion diameter just above bud union from North to South in inches." []
+namespace: INV
+relationship: variable_of INV:0000051 ! Scion Trunk Diameter
+
+[Term] 
+id: INV:0000175
+name: Seed Count - Seed Count - count
+def: "Count of all seeds in a fruit sample." []
+namespace: INV
+relationship: variable_of INV:0000052 ! Seed Count
+
+[Term] 
+id: INV:0000176
+name: Seed Water Loss - Seed Water Loss Calculation - percentage
+def: "Seed water loss calculation. WatLoss = (Fresh Weight - Dry Weight)/(Fresh Weight)" []
+namespace: INV
+relationship: variable_of INV:0000053 ! Seed Water Loss
+
+[Term] 
+id: INV:0000177
+name: Soil Moisture - Soil Moisture Measurement - 1-3 Soil Moisture Scale
+def: "Estimation of soil moisture using a rating scale." []
+namespace: INV
+relationship: variable_of INV:0000054 ! Soil Moisture
+
+[Term] 
+id: INV:0000178
+name: Soil Moisture - Soil Moisture Measurement - water fraction by volume
+def: "Measurement of soil moisture using a soil moisture probe" []
+namespace: INV
+relationship: variable_of INV:0000054 ! Soil Moisture
+
+[Term] 
+id: INV:0000179
+name: Total Soluble Solids - TSS Measurement - Degrees Brix
+def: "Brix (total soluble solids) measurement in juice from fruit sample with refractometer." []
+namespace: INV
+relationship: variable_of INV:0000055 ! Total Soluble Solids
+
+[Term] 
+id: INV:0000180
+name: Tree Yield - Count of Fruit on Tree using ML - count
+def: "Count of Fruit on Tree using Machine Learning on Image of Tree" []
+namespace: INV
+relationship: variable_of INV:0000056 ! Tree Yield
+
+[Term] 
+id: INV:0000181
+name: Tree Yield - Manual Count of Fruit on Tree - count
+def: "Manual Count of Fruit on Tree" []
+namespace: INV
+relationship: variable_of INV:0000056 ! Tree Yield
+
+[Term] 
+id: INV:0000182
+name: Tree Yield - Weight of All Fruit Harvested - pounds
+def: "Weight of all Fruit on Tree Harvested for Yield Estimation in kilograms." []
+namespace: INV
+relationship: variable_of INV:0000056 ! Tree Yield
+
+[Term] 
+id: INV:0000183
+name: Turgid Leaf Weight - Turgid Leaf Tissue Weight Measurement - grams
+def: "Leaf sample weight in grams after soaked in distilled water for 3 hours in the dark at room temp." []
+namespace: INV
+relationship: variable_of INV:0000057 ! Turgid Leaf Weight
+
+[Term] 
+id: INV:0000184
+name: Wet Soil Weight - Wet Soil Weight Measurement - grams
+def: "Direct measurement of the weight of a soil sample when freshly collected." []
+namespace: INV
+relationship: variable_of INV:0000058 ! Wet Soil Weight
+
