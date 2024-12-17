@@ -4,10 +4,9 @@ saved-by: Lukas_Mueller
 default-namespace: INV
 ontology: CO_365
 
-
 [Term]
 id: INV:0000000
-name: ROOT
+name: INVENTORY ROOT
 namespace: INV
 
 [Term] 
@@ -1447,4 +1446,225 @@ def: "Direct measurement of the weight in grams of a soil sample when freshly co
 synonym: "WetSoilWt_g" EXACT []
 namespace: INV
 relationship: variable_of INV:0000058 ! Wet Soil Weight
+
+[Term] 
+id: INV:0000188
+name: Germplasm Intake
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000189
+name: Propagation Information
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000200
+name: Rootstock Name
+def: "" []
+namespace: INV
+is_a: INV:0000004 ! Morphological
+
+[Term] 
+id: INV:0000201
+name: Explant Size - Categorical
+def: "Size of explant used for propagation" []
+synonym: "ExplantSize" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000202
+name: Germplasm Intake - Type - Categorical
+def: "Tissue type of material received from source by repository." []
+synonym: "MaterialType" EXACT []
+namespace: INV
+relationship: variable_of INV:0000188 ! Germplasm Intake
+
+[Term] 
+id: INV:0000203
+name: Germplasm Intake- Date - YYYY-MM-DD
+def: "Date accession/plant/source was received/collected by repository." []
+synonym: "MatRcvdDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000188 ! Germplasm Intake
+
+[Term] 
+id: INV:0000204
+name: Propagation Acclimation End - Date
+def: "End date for propagation acclimation." []
+synonym: "AccEndDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000205
+name: Propagation Acclimation Initial Settings - Text
+def: "Initial setting for propagation acclimation." []
+synonym: "PropAccInitial" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000206
+name: Propagation Acclimation Start - Date
+def: "Start date for propagation acclimation." []
+synonym: "AccStrtDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000207
+name: Propagation Contamination - Categorical
+def: "Indicator of the presence of propagation contamination." []
+synonym: "PropContam" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000208
+name: Propagation Discard Date - YYYY-MM-DD
+def: "Date propagation was discarded." []
+synonym: "PropDiscardDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000209
+name: Propagation Discard Reason - Text
+def: "Reason for discarding propagation." []
+synonym: "PropDiscardRsn" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000210
+name: Propagation Experimental Treatment
+def: "Experimental treatment applied to propagation for testing." []
+synonym: "PropExpTrt" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000211
+name: Propagation Explant Type - Categorical
+def: "Type of explant used for propagation." []
+synonym: "PropExplantType" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000212
+name: Propagation Final Location
+def: "Propagation Final Location" []
+synonym: "PropFinalLoc" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000213
+name: Propagation Final Transfer Date - YYYY-MM-DD
+def: "Final transfer date for propagation." []
+synonym: "FinalTrnsDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000214
+name: Propagation Growth Chamber Removal - Date
+def: "Propagation Growth Chamber Removal Date" []
+synonym: "PropGCRmvDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000215
+name: Propagation Medium Creator - Text
+def: "Initials of person who made medium for propagations." []
+synonym: "PropMediumCreator" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000216
+name: Propagation Medium Date - YYYY-MM-DD
+def: "Date medium used for propagation was created" []
+synonym: "PropMediumDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000217
+name: Propagation Medium Type - Text
+def: "Type of medium used for propagation." []
+synonym: "PropMedium" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000218
+name: Propagation Planter - Text
+def: "Initials of person who planted propagation." []
+synonym: "PropPlanter" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000219
+name: Propagation Planting Container - Text
+def: "Container used to for planting propagation." []
+synonym: "PropPlantContr" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000220
+name: Propagation Prep and Disinfestation Protocol
+def: "Protocol used to prepare and disinfect tissue for propagation. 1 = Remove seed coats manually, 20 percent bleach for 20 mins., Rinse 3x sterile H2O; 2 = Rinse budwood, cut into nodal segments, water soak 3 hrs, 1 min 70 percent isopropyl alcohol, 20 mins 20 percent bleach, rinse 3x with sterile H2O; 3 = Rinse budwood, cut into 1-2  inch segments, water soak 2 hrs, 1 min 70 percent isopropyl alcohol, 20 mins 20 percent bleach, rinse 3x with sterile H2O, 5 mins 100 percent PPM soak; 4 = CCPP Protocol; 5 = CCPP Protocol without cut ends" []
+synonym: "PropPrepDis" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000221
+name: Propagation Soil Type - Text
+def: "Soil type used for propagation final transplant." []
+synonym: "FinTrnsSoilType" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000222
+name: Propagation Transfer Date - YYYY-MM-DD
+def: "Date propagation was transferred to new medium." []
+synonym: "PropTrnsDate" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000223
+name: Propagation Vessel - Categorical
+def: "Vessel used to store propagation." []
+synonym: "PropVessel" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000224
+name: Propagator - Categorical
+def: "Person who performed propagation." []
+synonym: "PropPerson" EXACT []
+namespace: INV
+relationship: variable_of INV:0000189 ! Propagation Information
+
+[Term] 
+id: INV:0000225
+name: Rootstock Graft - Text
+def: "Name of rootstock used for graft." []
+synonym: "RtstckGrft" EXACT []
+namespace: INV
+relationship: variable_of INV:0000200 ! Rootstock Name
 
