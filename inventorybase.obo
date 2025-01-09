@@ -415,11 +415,14 @@ def: "" []
 namespace: INV
 is_a: INV:0000001 ! Abiotic Stress
 
+
+###The trait for ID: INV:0000059 (Name:Acid - Measurement - pH), could you please change the definition to: "Juice acidity from fruit sample using a pH meter" and change the synonym to only Acid_pH.
+
 [Term] 
 id: INV:0000059
 name: Acid - Measurement - pH
-def: "Juice acidity from fruit sample using titration." []
-synonym: "Acid; Titration" EXACT []
+def: "Juice acidity from fruit sample using a pH meter" []
+synonym: "Acid_pH" EXACT []
 namespace: INV
 relationship: variable_of INV:0000007 ! Acid
 
@@ -1667,4 +1670,51 @@ def: "Name of rootstock used for graft." []
 synonym: "RtstckGrft" EXACT []
 namespace: INV
 relationship: variable_of INV:0000200 ! Rootstock Name
+
+[Term]
+id: INV:0000226
+name: Fruit Perimeter from Side 1 of Whole Fruit Imaged with Poles Parallel (mm)
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented parallel to background surface. The total distance around outer border of fruit is measured in mm" []
+synonym: "FrtPermtr_WVS1_mm" EXACT []
+namespace: INV
+relationship: variable of INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000227
+name: Fruit Perimeter from Side 2 of Whole Fruit Imaged with Poles Parallel (mm) 
+def: "Whole fruit is imaged on side 2 (180 degree rotation from side 1) with poles oriented parallel to background surface. The total distance around outer border of fruit is measured in mm FrtPermtr_WVS2_mm" []
+synonym: "FrtPermtr_WVS2_mm" EXACT []
+namespace: INV
+relationship: variable_of INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000228
+name: Fruit Perimeter from Side 2 of Whole Fruit Imaged with Poles Perpendicular (mm)
+def: "Whole fruit is imaged on a single side (side 1) with poles oriented perpendicular to background surface. The around outer border of fruit is measured in mm" []
+synonym: "FrtPermtr_WHS1_mm" EXACT []
+namespace: INV
+relationship: variable_of INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000229
+name: Fruit Perimeter from Side 2 of Whole Fruit Imaged with Poles Perpendicular (mm)
+def: "Whole fruit is imaged on 2 (180 degree rotation from side 1) with poles oriented perpendicular to background surface. The around outer border of fruit is measured in mm" []
+synonym: "FrtPermtr_WHS2_mm" EXACT []
+namespace: INV
+relationship: variable_of INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000230
+name: Puff Skin Rating
+def: "Rating of the amount of puffy skin observed on date fruit where 1=0-5%, 2=5-25%, 3=25-50%, and 4=>50%" []
+synonym: "PuffRate" EXACT []
+relationship: variable_of INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000231
+name: Acidity Measurement
+def: "Titration Juice acidity from fruit sample using titration" []
+synonym: "Acid_Titration" EXACT []
+relationship: variable_of id: INV:0000007 ! Acid
+
 
