@@ -1724,3 +1724,110 @@ synonym: "Acid_Titration" EXACT []
 relationship: variable_of INV:0000007 ! Acid
 
 
+###Term Name - BB	Term Definition	Synonym	Trait class	variable_name	Trait - CO	Scale class	Categories
+
+[Term]
+id: INV:0000233
+name: Planting Date
+def: "Date tree was planted." []
+is_a: INV:0000002 ! Agronomic
+
+[Term]
+id: INV:0000234
+name: Planting Date - YYYYMMDD
+def: "Date tree was planted." []
+synonym: "PlantDate" EXACT []
+relationship: variable_of INV:0000234 ! Planting Date
+
+[Term]
+id: INV:0000235
+name: Propagation Medium Base
+ef: "Type of medium base used for propagation." []
+is_a: INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000236
+name: Propagation Medium Base - Categorical
+synonym: "PropMedBase" EXACT []
+def: "Type of medium base used for propagation. Categories: M524/M519/D190/L154/L449/M580/M401/D2470/M491/RMA" []
+relationship: variable_of INV:0000235 ! Propagation Medium Base
+
+####Propagation Medium Agar	Type of medium agar used for propagation.	PropMedAgar	Morphological	Propagation Medium Agar - Categorical	Propagation Information	Categorical	Plant TC  Agar/Gelzan
+
+[Term]
+id: INV:0000237
+name: Propagation Medium Agar
+def: "Type of medium agar used for propagation." []
+is_a: INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000238
+name: Propagation Medium Agar - Categorical
+synonym: "PropMedAgar" EXACT []
+def: "Propagation Medium Agar - Categorical Agar/Gelzan" []
+relationship: variable_of INV:0000237 ! Propagation Medium Agar
+
+[Term]
+id: INV:0000239
+name: Propagation Medium Additives
+def: "Type of medium additives used for propagation." []
+is_a: INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000240
+name: Propagation Medium Additives - Categorical
+synonym: "PropMedAdd" EXACT []
+def: "Propagation Medium Additives - Categorical - FM Stock/AC/Myo-inositol/Calcium stock/Sucrose/Vitamins/Glycin 
+relationship: variable_of INV:0000239 ! Propagation Medium Additives
+
+[Term]
+id: INV:0000241
+name: Propagation Medium Cytokinins
+def: "Type of medium cytokinins used for propagation." []
+is_a: INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000242
+name: Propagation Medium Cytokinins - Categorical
+synonym: "PropMedCytok" EXACT []
+def: "Propagation Information Categorical - BAP/Zeatin/Adenine /TDZ/Meta-topolin/Kinetin
+relationship: variable_of INV:0000241 ! Propagation Medium Cytokinins
+
+[Term]
+id: INV:0000243
+name: Propagation Medium Auxins
+def: "Type of medium auxins used for propagation." []
+is_a: INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000244
+name: Propagation Medium Auxins - Categorical
+synonym: "PropMedAux" EXACT []
+def: "Propagation Medium Auxins - Categorical Propagation Information Categorical - NAA/IBA/2iP/2,4-D/IAA" []
+relationship: variable_of INV:0000243 ! Propagation Medium Auxins
+
+[Term]
+id: INV:0000245
+name: Propagation Medium Treatments
+def: "Type of medium treatments used for propagation." []
+is_a: INV:0000004 ! Morphological
+
+[Term]
+id: INV:0000246
+name: Propagation Medium Treatments - Categorical
+synonym: "PropMedTrt" EXACT []
+def: "Propagation Medium Treatments - Categorical - Citric Acid/NPA /Antioxidant mixture/Ascorbic Acid/PVP-40/Phytoax /GA/M533/Benomyl/Carbendazim/Amphotericin B/Cycloheximide/Phloroglucinol" []
+relationship: variable_of INV:0000245 ! Propagation Medium Treatments
+
+[Term]
+id: INV:0000247
+name: Inoculation Count
+def: "The number of inoculations performed." []
+is_a: INV:0000003 ! Biotic Stress
+
+[Term]
+id: INV:0000248
+name: Inoculation Count - Numerical
+synonym: "InocCount" EXACT []
+def: "Inoculation Count - Numerical" []
+relationship: variable_of INV:0000247 ! Inoculation Count
