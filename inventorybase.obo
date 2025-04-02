@@ -415,9 +415,6 @@ def: "" []
 namespace: INV
 is_a: INV:0000001 ! Abiotic Stress
 
-
-###The trait for ID: INV:0000059 (Name:Acid - Measurement - pH), could you please change the definition to: "Juice acidity from fruit sample using a pH meter" and change the synonym to only Acid_pH.
-
 [Term] 
 id: INV:0000059
 name: Acid - Measurement - pH
