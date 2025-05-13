@@ -418,8 +418,8 @@ is_a: INV:0000001 ! Abiotic Stress
 [Term] 
 id: INV:0000059
 name: Acid - Measurement - pH
-def: "Juice acidity from fruit sample using titration." []
-synonym: "Acid; Titration" EXACT []
+def: "Juice acidity from fruit sample using a pH meter." []
+synonym: "Acid_pH" EXACT []
 namespace: INV
 relationship: variable_of INV:0000007 ! Acid
 
