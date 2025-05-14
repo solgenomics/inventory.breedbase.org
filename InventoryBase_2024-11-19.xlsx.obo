@@ -290,6 +290,20 @@ namespace: INV
 is_a: INV:0000002 ! Agronomic
 
 [Term] 
+id: INV:0000302
+name: Fruit In-Season
+def: "The seasonal range that the tree is typically bearing fruit that is ready to harvest." []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
+id: INV:0000300
+name: Image
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
 id: INV:0000041
 name: Graft Survival Date
 def: "" []
@@ -1222,6 +1236,13 @@ def: "Survival status of tree graft." []
 synonym: "GrftSurv_da" EXACT []
 namespace: INV
 relationship: variable_of INV:0000040 ! Graft Survival
+
+[Term] 
+id: INV:0000301
+name: Test Image
+def: "A trait for testing image uploads." []
+namespace: INV
+relationship: variable_of INV:0000300 ! Image
 
 [Term] 
 id: INV:0000160
