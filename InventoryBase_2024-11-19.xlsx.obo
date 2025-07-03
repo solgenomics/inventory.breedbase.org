@@ -290,11 +290,18 @@ namespace: INV
 is_a: INV:0000002 ! Agronomic
 
 [Term] 
+id: INV:0000303
+name: Fruit In-Season Trait
+def: "" []
+namespace: INV
+is_a: INV:0000002 ! Agronomic
+
+[Term] 
 id: INV:0000302
 name: Fruit In-Season
 def: "The seasonal range that the tree is typically bearing fruit that is ready to harvest." []
 namespace: INV
-is_a: INV:0000002 ! Agronomic
+relationship: variable_of INV:0000303 ! Fruit In-Season Trait
 
 [Term] 
 id: INV:0000300
