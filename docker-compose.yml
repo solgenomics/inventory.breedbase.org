@@ -29,14 +29,14 @@ services:
         source: /home/production/inventory.breedbase.org/bash_history
         target: /home/production/.bash_history
       - type: bind
-        source: /home/production/inventory.breedbase.org/InventoryBasePicture.jpg
+        source: /home/production/inventory.breedbase.org/img/InventoryBasePicture.jpg
         target: /home/production/cxgn/sgn/static/img/InventoryBasePicture.jpg
+      - type: bind
+        source: /home/production/inventory.breedbase.org/img/inventory_logo.png
+        target: /home/production/cxgn/sgn/static/img/inventory_logo.png
       - type: bind
         source: /home/production/inventory.breedbase.org/mason
         target: /home/production/cxgn/inventory/mason
 
 volumes:
   webdata:
-
-
-
