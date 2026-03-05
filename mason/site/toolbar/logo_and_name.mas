@@ -1,0 +1,7 @@
+
+<a class="navbar-brand" href="/" style="padding:10px 0px">
+
+<img id="sgnlogo"
+src="/static/img/inventory_logo.png" width="50" title="Inventory Home"></a>
+
+<a class="navbar-brand sgn_brand_name" href="/">Inventory</a>
