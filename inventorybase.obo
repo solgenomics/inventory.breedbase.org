@@ -1697,17 +1697,81 @@ namespace: INV
 relationship: variable_of INV:0000200 ! Rootstock Name
 
 [Term]
+id: INV:0000304
+name: Disease Detection
+def: "Traits related to disease detection methodology"
+is_a: INV:0000003 ! Biotic Stress
+
+[Term]
 id: INV:0000305
-name: 
+name: Spiroplasma citri Culture Color Detection
+def: "Detection of Spiroplasma citri infection based on the color change of a pH-indicator culture medium following incubation of plant tissue samples, where a shift from red to yellow indicates bacterial growth consistent with the presence of S. citri." []
+is_a: INV:0000304 ! Disease Detection
 
+[Term]
+id: INV:0000306
+name: SCitri_CultColor
+def: "Detection of Spiroplasma citri infection based on the color change of a pH-indicator culture medium following incubation of plant tissue samples, where a shift from red to yellow indicates bacterial growth consistent with the presence of S. citri." []
+relationship: variable_of INV:0000305 ! Spiroplasma citri Culture Color Detection
 
+[Term]
+id: INV:0000307
+name: Viroid RNA sPAGE Band Detection
+def: "Detection of viroid infection" []
+is_a: INV:0000304 ! Disease Detection
 
-!Spiroplasma citri Culture Color Detection	Detection of Spiroplasma citri infection based on the color change of a pH-indicator culture medium following incubation of plant tissue samples, where a shift from red to yellow indicates bacterial growth consistent with the presence of S. citri.	SCitri_CultColor	Biotic Stress	Spiroplasma citri Culture Color Detection	Disease Detection	Categorical	POS/NEG
-!Viroid RNA sPAGE Band Detection	Detection of viroid infection based on visualization of nucleic acid bands following RNA extraction and sequential polyacrylamide gel electrophoresis (sPAGE), where bands corresponding to viroid-sized RNA fragments indicate potential viroid presence relative to assay controls.	Vd_sPAGE_Band	Biotic Stress	Viroid RNA sPAGE Band Detection	Disease Detection	Categorical	POS/NEG
-!Virus dsRNA sPAGE Band Detection	Detection of viral infection based on visualization of nucleic acid bands following double-stranded RNA extraction and sequential polyacrylamide gel electrophoresis (sPAGE), where bands consistent with viral dsRNA profiles indicate potential virus presence relative to assay controls.	Vir_dsRNA_sPAGE	Biotic Stress	Virus dsRNA sPAGE Band Detection	Disease Detection	Categorical	POS/NEG
-!Spiroplasma citri Culture Assay Image	Digital image capturing the culture tube used for Spiroplasma citri detection, documenting medium color and assay condition as visual evidence supporting diagnostic interpretation.	SCitri_Cult_Img	Biotic Stress	Spiroplasma citri Culture Assay Image	Disease Detection	Photo	
-!Viroid sPAGE Assay Image	Digital image capturing the sequential polyacrylamide gel electrophoresis (sPAGE) used for viroid detection, documenting banding patterns and controls as visual evidence supporting diagnostic interpretation.	Viroid_sPAGE_Img	Biotic Stress	Viroid sPAGE Assay Image	Disease Detection	Photo	
-!Virus dsRNA sPAGE Assay Image	Digital image capturing the sequential polyacrylamide gel electrophoresis (sPAGE) used for virus detection following dsRNA extraction, documenting banding patterns and controls as visual evidence supporting diagnostic interpretation.	Virus_dsRNA_sPAGE_Img	Biotic Stress	Virus dsRNA sPAGE Assay Image	Disease Detection	Photo	
+[Term]
+id: INV:0000308
+name: Vd_sPAGE_Band
+def: "Detection of viroid infection based on visualization of nucleic acid bands following RNA extraction and sequential polyacrylamide gel electrophoresis (sPAGE), where bands corresponding to viroid-sized RNA fragments indicate potential viroid presence relative to assay controls." []
+relationship: variable_of INV:0000307 ! Viroid RNA sPAGE Band Detection
 
+[Term]
+id: INV:0000309
+name: Virus dsRNA sPAGE Band Detection
+def: "Detection of viral infection" []
+is_a: INV:0000304 ! Disease Detection
+
+[Term]
+id: INV:0000310
+name: Vir_dsRNA_sPAGE
+def: "Detection of viral infection based on visualization of nucleic acid bands following double-stranded RNA extraction and sequential polyacrylamide gel electrophoresis (sPAGE), where bands consistent with viral dsRNA profiles indicate potential virus presence relative to assay controls." []
+relationship: variable_of INV:0000309 ! Virus dsRNA sPAGE Band Detection
+
+[Term]
+id: INV:0000311
+name: Spiroplasma citri Culture Assay Image
+def: "Digital image capturing the culture tube used for Spiroplasma citri detection" []
+is_a: INV:0000304 ! Disease Detection
+
+[Term]
+id: INV:0000312
+name: SCitri_Cult_Img
+def: "Digital image capturing the culture tube used for Spiroplasma citri detection, documenting medium color and assay condition as visual evidence supporting diagnostic interpretation." []
+relationship: variable_of INV:0000311 ! Spiroplasma citri Culture Assay Image
+
+[Term]
+id: INV:0000313
+name: Viroid sPAGE Assay Image
+def: "Digital image capturing the sequential polyacrylamide gel electrophoresis (sPAGE) used for viroid detection" []
+is_a: INV:0000304 ! Disease Detection
+
+[Term]
+id: INV:0000314
+name: Viroid_sPAGE_Img
+def: "Digital image capturing the sequential polyacrylamide gel electrophoresis (sPAGE) used for viroid detection, documenting banding patterns and controls as visual evidence supporting diagnostic interpretation." []
+relationship: variable_of INV:0000313 ! Viroid sPAGE Assay Image
+
+[Term]
+id: INV:0000315
+name: Virus dsRNA sPAGE Assay Image
+def: "Digital image capturing the sequential polyacrylamide gel electrophoresis (sPAGE) used for virus detection" []
+is_a: INV:0000304 ! Disease Detection
+
+[Term]
+id: INV:0000316
+name: Virus_dsRNA_sPAGE_Img
+def: "Digital image capturing the sequential polyacrylamide gel electrophoresis (sPAGE) used for virus detection following dsRNA extraction, documenting banding patterns and controls as visual evidence supporting diagnostic interpretation." []
+relationship: variable_of INV:0000315 ! Virus dsRNA sPAGE Assay Image
 
 
