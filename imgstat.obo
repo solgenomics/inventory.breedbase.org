@@ -1,5 +1,9 @@
+format-version: 1.2
+date: 2026-03-19
+saved-by: Lukas Mueller
+default-namespace: IMGSTAT
 
-Term Definition	Synonym	Trait Class	Scale	Categories
+!Term Definition	Synonym	Trait Class	Scale	Categories
 
 [Term]
 id: IMGSTAT:0000001
@@ -56,7 +60,7 @@ relationship: variable_of IMGSTAT:0000007 ! Object Identity Trait
 [Term]
 id: IMGSTAT:0000009
 name: Object Count Trait
-is_a: IMGSTAT:00000001 ! IMGSTAT ROOT
+is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
 
 [Term]
 id: IMGSTAT:0000010
