@@ -6,199 +6,175 @@ default-namespace: IMGSTAT
 !Term Definition	Synonym	Trait Class	Scale	Categories
 
 [Term]
-id: IMGSTAT:0000001
+id: IMGSTAT:0000000
 name: IMGSTAT ROOT
 
 [Term]
+id: IMGSTAT:0000100
+name: Reference Object Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000101
+name: Analysis Status Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000102
+name: Object Identity Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000103
+name: Object Count Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000104
+name: Object Size Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000105
+name: Object Topology Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000106
+name: Object Shape Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000107
+name: Object Orientation Traits
+is_a: IMGSTAT:0000000 ! IMGSTAT ROOT
+
+[Term]
+id: IMGSTAT:0000001
+name: Color Card Present
+synonym: "has_color_card" EXACT []
+def: "Boolean indicator specifying whether a valid color calibration card was detected in the image by the analysis pipeline." []
+relationship: variable_of IMGSTAT:0000100 ! Reference Object Traits
+
+[Term]
 id: IMGSTAT:0000002
-name: Reference Object Trait
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
+name: Size Marker Present
+synonym: "has_size_marker" EXACT []
+def: "Boolean indicator specifying whether a valid physical size marker was detected in the image by the analysis pipeline." []
+relationship: variable_of IMGSTAT:0000100 ! Reference Object Traits
 
 [Term]
 id: IMGSTAT:0000003
-name: has_color_card
-def: "Boolean indicator specifying whether a valid color calibration card was detected in the image by the analysis pipeline." []
-relationship: variable_of IMGSTAT:0000002 ! Reference Object Trait
-
-!Boolean indicator specifying whether a valid color calibration card was detected in the image by the analysis pipeline.	has_color_card	Reference Object Trait	Categorical	True/False
+name: analysis pass
+synonym: "analysis_pass" EXACT []
+def: "Boolean indicator specifying whether the analysis pipeline completed successfully and all required prerequisites were satisfied." []
+relationship: variable_of IMGSTAT:0000101 ! Analysis Status Traits
 
 [Term]
 id: IMGSTAT:0000004
-name: has_size_marker
+name: Object Type
+synonym: "obj_type" EXACT []
 def: "Boolean indicator specifying whether a valid physical size marker was detected in the image by the analysis pipeline." []
-relationship: variable_of IMGSTAT:0000002 ! Reference Object Trait
-
-!Boolean indicator specifying whether a valid physical size marker was detected in the image by the analysis pipeline.	has_size_marker	Reference Object Trait	Categorical	True/False
+relationship: variable_of IMGSTAT:0000002 ! Reference Object Traits
 
 [Term]
 id: IMGSTAT:0000005
-name: Analysis Status Trait
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
+name: Object Count
+synonym: "obj_count" EXACT []
+def: "Total number of segmented objects detected within the image frame." []
+relationship: variable_of IMGSTAT:0000103 ! Object Count Traits
 
 [Term]
 id: IMGSTAT:0000006
-name: analysis_pass
-def: "Boolean indicator specifying whether the analysis pipeline completed successfully and all required prerequisites were satisfied." []
-relationship: variable_of IMGSTAT:0000005 ! Analysis Status Trait
-
-!Boolean indicator specifying whether the analysis pipeline completed successfully and all required prerequisites were satisfied.	analysis_pass	Analysis Status Trait	Categorical	True/False
+name: Object Area From Segmentation Mask
+synonym: "obj_area_mask" EXACT []
+def: "Area of the segmented object calculated from its binary segmentation mask and converted to square millimeters using a known pixel-to-length scale." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000007
-name: Object Identity Trait
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
+name: Object Convex Hull Area
+synonym: "obj_area_hull" EXACT []
+def: "Area of the convex hull computed from the segmented object mask, expressed in square millimeters." []
+relationship: variable_of IMGSTAT:0000105 ! Object Toplogy Traits
 
 [Term]
 id: IMGSTAT:0000008
-name: obj_type
-def: "Categorical descriptor indicating the tissue type of the object identified in the image (e.g., fruit, seed, leaf, root, shoot)." []
-relationship: variable_of IMGSTAT:0000007 ! Object Identity Trait
-
-
-!Categorical descriptor indicating the tissue type of the object identified in the image (e.g., fruit, seed, leaf, root, shoot).	obj_type	Object Identity Trait	Categorical	fruit/seed/leaf/root/shoot
+name: Object Maximum Diameter From Fitted Ellipse
+synonym: "obj_diam_max_ellipse" EXACT []
+def: "Length of the major axis of an ellipse fitted to the segmented object mask, expressed in millimeters." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000009
-name: Object Count Trait
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
+name: Object Minimum Diameter From Fitted Ellipse   
+synonym: "obj_diam_min_ellipse" EXACT []
+def: "Length of the minor axis of an ellipse fitted to the segmented object mask, expressed in millimeters." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000010
-name: obj_count
-def: "Total number of segmented objects detected within the image frame." []
-relationship: variable_of IMGSTAT:0000009 ! Object Count Trait
+name: Object Perimeter From Segmentation Mask
+synonym: "obj_perimeter_mask" EXACT []     
+def: "Length of the boundary of the segmented object mask, converted to millimeters using a known pixel-to-length scale." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
-!Total number of segmented objects detected within the image frame.	obj_count	Object Count Trait	Numerical
 
 [Term]
 id: IMGSTAT:0000011
-name: Object Size Traits
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
+name: Object Solidity
+synonym: "obj_solidity" EXACT []
+def: "Dimensionless ratio calculated as the segmented object area divided by its convex hull area." []
+relationship: variable_of IMGSTAT:0000106 ! Object Shape Traits
 
 [Term]
 id: IMGSTAT:0000012
-name: obj_area_mask
-def: "Area of the segmented object calculated from its binary segmentation mask and converted to square millimeters using a known pixel-to-length scale." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
+name: Object Height
+synonym: "obj_height" EXACT []
+def: "Vertical extent of the segmented object measured along the image y-axis, defined as the distance between the minimum and maximum y-coordinates of the object mask, expressed in millimeters." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
-!Area of the segmented object calculated from its binary segmentation mask and converted to square millimeters using a known pixel-to-length scale.	obj_area_mask	Object Size Traits	Numerical
 
 [Term]
 id: IMGSTAT:0000013
-name: Object Topology Traits
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
+name: Object Width
+synonym: "obj_width" EXACT []
+def: "Horizontal extent of the segmented object measured along the image x-axis, defined as the distance between the minimum and maximum x-coordinates of the object mask, expressed in millimeters." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000014
-name: obj_area_hull
-def: "Area of the convex hull computed from the segmented object mask, expressed in square millimeters." []
-relationship: variable_of IMGSTAT:0000013 ! Object Topology Traits
-
-!Area of the convex hull computed from the segmented object mask, expressed in square millimeters.	obj_area_hull	Object Topology Traits	Numerical
+name: Object Longest Path
+synonym: "obj_longest_path" EXACT []
+def: "Length of the longest geodesic path between convex hull vertices passing through the objectâ€™s center of mass, expressed in millimeters." []
+relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000015
-name: obj_diam_max_ellipse
-def: "Length of the major axis of an ellipse fitted to the segmented object mask, expressed in millimeters." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
-
-
-!Length of the major axis of an ellipse fitted to the segmented object mask, expressed in millimeters.	obj_diam_max_ellipse	Object Size Traits	Numerical
-
+name: Object Aspect Ratio
+synonym: "obj_aspect_ratio" EXACT []
+def: "Dimensionless ratio calculated as the maximum diameter divided by the minimum diameter of the fitted ellipse." []
+relationship: variable_of IMGSTAT:0000106 ! Object Shape Traits
 
 [Term]
 id: IMGSTAT:0000016
-name: obj_diam_min_ellipse
-def: "Length of the minor axis of an ellipse fitted to the segmented object mask, expressed in millimeters." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
-
-!Length of the minor axis of an ellipse fitted to the segmented object mask, expressed in millimeters.	obj_diam_min_ellipse	Object Size Traits	Numerical
+name: Object Convex Hull Vertices
+synonym: "obj_hull_vertices" EXACT []
+def: "Number of vertices defining the convex hull of the segmented object mask." []
+relationship: variable_of IMGSTAT:0000104! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000017
-name: obj_perimeter_mask
-def: "Length of the boundary of the segmented object mask, converted to millimeters using a known pixel-to-length scale." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
-
-!Length of the boundary of the segmented object mask, converted to millimeters using a known pixel-to-length scale.	obj_perimeter_mask	Object Size Traits	Numerical
+name: Object Ellipse Eccentricity
+synonym: "obj_ellipse_eccentricity" EXACT []
+def: "Dimensionless eccentricity of the ellipse fitted to the segmented object mask." []
+relationship: variable_of IMGSTAT:0000106 ! Object Shape Traits
 
 [Term]
 id: IMGSTAT:0000018
-name: Object Shape Traits
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
-
-[Term]
-id: IMGSTAT:0000019
-name: obj_solidity
-def: "Dimensionless ratio calculated as the segmented object area divided by its convex hull area." []
-relationship: variable_of IMGSTAT:0000018 ! Object Shape Traits
-
-
-!Dimensionless ratio calculated as the segmented object area divided by its convex hull area.	obj_solidity	Object Shape Traits	Numerical
-
-[Term]
-id: IMGSTAT:0000020
-name: obj_height
-def: "Vertical extent of the segmented object measured along the image y-axis, defined as the distance between the minimum and maximum y-coordinates of the object mask, expressed in millimeters." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
-
-!Vertical extent of the segmented object measured along the image y-axis, defined as the distance between the minimum and maximum y-coordinates of the object mask, expressed in millimeters.	obj_height	Object Size Traits	Numerical
-
-[Term]
-id: IMGSTAT:0000021
-name: obj_width
-def: "Horizontal extent of the segmented object measured along the image x-axis, defined as the distance between the minimum and maximum x-coordinates of the object mask, expressed in millimeters." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
-
-!Horizontal extent of the segmented object measured along the image x-axis, defined as the distance between the minimum and maximum x-coordinates of the object mask, expressed in millimeters.	obj_width	Object Size Traits	Numerical
-
-[Term]
-id: IMGSTAT:0000022
-name: obj_longest_path
-def: "Length of the longest geodesic path between convex hull vertices passing through the object's center of mass, expressed in millimeters." []
-relationship: variable_of IMGSTAT:0000011 ! Object Size Traits
-
-!Length of the longest geodesic path between convex hull vertices passing through the objectÃ¢€™s center of mass, expressed in millimeters.	obj_longest_path	Object Size Traits	Numerical
-
-
-
-[Term]
-id: IMGSTAT:0000023
-name: obj_aspect_ratio
-def: "Dimensionless ratio calculated as the maximum diameter divided by the minimum diameter of the fitted ellipse." []
-relationship: variable_of IMGSTAT:0000018 ! Object Shape Traits
-
-
-!Dimensionless ratio calculated as the maximum diameter divided by the minimum diameter of the fitted ellipse.	obj_aspect_ratio	Object Shape Traits	Numerical
-
-
-[Term]
-id: IMGSTAT:0000024
-name: obj_hull_vertices
-def: "Number of vertices defining the convex hull of the segmented object mask." []
-relationship: variable_of IMGSTAT:0000013 ! Object Topology Traits
-
-
-!Number of vertices defining the convex hull of the segmented object mask.	obj_hull_vertices	Object Topology Traits	Numerical
-
-[Term]
-id: IMGSTAT:0000025
-name: obj_ellipse_eccentricity
-def: "Dimensionless eccentricity of the ellipse fitted to the segmented object mask." []
-relationship: variable_of IMGSTAT:0000018 ! Object Shape Traits
-
-
-!Dimensionless eccentricity of the ellipse fitted to the segmented object mask.	obj_ellipse_eccentricity	Object Shape Traits	Numerical
-
-[Term]
-id: IMGSTAT:0000026
-name: Object Orientation Traits
-is_a: IMGSTAT:0000001 ! IMGSTAT ROOT
-
-[Term]
-id: IMGSTAT:0000027
-name: obj_ellipse_major_angle
+name: Object Ellipse Major Axis Angle
+synonym: "obj_ellipse_major_angle" EXACT []
 def: "Angle of rotation of the major axis of the ellipse fitted to the segmented object mask, measured relative to the image x-axis, expressed in degrees." []
-relationship: variable_of IMGSTAT:0000026 ! Object Orientation Traits
+relationship: variable_of IMGSTAT:0000001 ! IMGSTAT ROOT
 
-!Angle of rotation of the major axis of the ellipse fitted to the segmented object mask, measured relative to the image x-axis, expressed in degrees.	obj_ellipse_major_angle	Object Orientation Traits	Numerical
+
