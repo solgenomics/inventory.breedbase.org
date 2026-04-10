@@ -65,7 +65,7 @@ relationship: variable_of IMGSTAT:0000100 ! Reference Object Traits
 
 [Term]
 id: IMGSTAT:0000003
-name: analysis pass
+name: Analysis Pass
 synonym: "analysis_pass" EXACT []
 def: "Boolean indicator specifying whether the analysis pipeline completed successfully and all required prerequisites were satisfied." []
 relationship: variable_of IMGSTAT:0000101 ! Analysis Status Traits
