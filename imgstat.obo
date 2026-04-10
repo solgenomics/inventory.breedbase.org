@@ -75,7 +75,7 @@ id: IMGSTAT:0000004
 name: Object Type
 synonym: "obj_type" EXACT []
 def: "Boolean indicator specifying whether a valid physical size marker was detected in the image by the analysis pipeline." []
-relationship: variable_of IMGSTAT:0000002 ! Reference Object Traits
+relationship: variable_of IMGSTAT:0000102 ! Object Identity Traits
 
 [Term]
 id: IMGSTAT:0000005
@@ -107,7 +107,7 @@ relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
 [Term]
 id: IMGSTAT:0000009
-name: Object Minimum Diameter From Fitted Ellipse   
+name: Object Minimum Diameter From Fitted Ellipse
 synonym: "obj_diam_min_ellipse" EXACT []
 def: "Length of the minor axis of an ellipse fitted to the segmented object mask, expressed in millimeters." []
 relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
@@ -115,7 +115,7 @@ relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 [Term]
 id: IMGSTAT:0000010
 name: Object Perimeter From Segmentation Mask
-synonym: "obj_perimeter_mask" EXACT []     
+synonym: "obj_perimeter_mask" EXACT []
 def: "Length of the boundary of the segmented object mask, converted to millimeters using a known pixel-to-length scale." []
 relationship: variable_of IMGSTAT:0000104 ! Object Size Traits
 
@@ -161,7 +161,7 @@ id: IMGSTAT:0000016
 name: Object Convex Hull Vertices
 synonym: "obj_hull_vertices" EXACT []
 def: "Number of vertices defining the convex hull of the segmented object mask." []
-relationship: variable_of IMGSTAT:0000104! Object Size Traits
+relationship: variable_of IMGSTAT:0000105 ! Object Topology Traits
 
 [Term]
 id: IMGSTAT:0000017
@@ -175,6 +175,4 @@ id: IMGSTAT:0000018
 name: Object Ellipse Major Axis Angle
 synonym: "obj_ellipse_major_angle" EXACT []
 def: "Angle of rotation of the major axis of the ellipse fitted to the segmented object mask, measured relative to the image x-axis, expressed in degrees." []
-relationship: variable_of IMGSTAT:0000001 ! IMGSTAT ROOT
-
-
+relationship: variable_of IMGSTAT:0000107 ! Object Orientation Traits
